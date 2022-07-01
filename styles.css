@@ -126,7 +126,58 @@ header {
 }
 
 .header__image--wrapper {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0 20px;
 }
+
+/* Main */
+
+.container{
+    padding: 56px 0;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* highlights */
+
+.highlights__wrapper {
+    display: flex;
+}
+
+.highlight{
+    padding: 0 24px;
+    width: calc(100% / 3); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight__img{
+    border: 2px solid #c2c2c2;
+    color: #f5002e;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.highlight__subtitle{
+    font-style: 24px;
+    margin-bottom: 24px;
+}
+
+.highlight__para{
+    font-size: 18px;
+}
+/* highlights */
+
 
 
