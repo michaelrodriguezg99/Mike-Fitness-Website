@@ -253,3 +253,41 @@ To add the wave efect */
   transform: translateY(0%);
   transform: rotate(180deg);
 }
+
+.program__img {
+  height: 350px;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, .60);
+  transition: scale 300ms ease;
+  cursor: no-drop;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+}
+
+.program {
+  width: calc(100% / 4);
+  text-align: center;
+  padding: 24px;
+}
+
+.program:hover .program__img{
+    transform: scale(1.03);
+}
+
+.program__img--wrapper{
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.program__title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.program__ratings{
+    color: #000;
+}
