@@ -29,6 +29,14 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -116,6 +124,51 @@ nav {
   text-decoration: none;
 }
 
+.button__menu {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  text-align: center;
+  color: #d2122e;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: #242424;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: #fff;
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link{
+font-size: 40px;
+color: #fff;
+padding: 50px 10px;
+}
+
+
+
+/* Header */
+
 header {
   padding-top: 15px;
   height: calc(100vh - 80px);
@@ -148,6 +201,10 @@ header {
 .header__image--wrapper {
   padding: 20px 20px 0px 20px;
   z-index: 2;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Main */
@@ -184,7 +241,7 @@ To add the wave efect */
   background: url("./assets/wave.svg");
   content: "";
   position: absolute;
-  width: 101vw;
+  width: 100%;
   height: 12vw;
   z-index: 1;
   background-size: cover;
@@ -245,7 +302,7 @@ To add the wave efect */
   background: url("./assets/wave.svg");
   content: "";
   position: absolute;
-  width: 101vw;
+  width: 100%;
   height: 12vw;
   z-index: 1;
   background-size: cover;
@@ -256,12 +313,12 @@ To add the wave efect */
 
 .program__img {
   height: 350px;
-  box-shadow: 0 10px 60px rgba(0, 0, 0, .60);
+  box-shadow: 0 5px 60px rgba(0, 0, 0, 0.75);
   transition: scale 300ms ease;
   cursor: no-drop;
 }
 
-.programs {
+.bestseller {
   display: flex;
   justify-content: center;
 }
@@ -272,22 +329,112 @@ To add the wave efect */
   padding: 24px;
 }
 
-.program:hover .program__img{
-    transform: scale(1.03);
+.program:hover .program__img {
+  transform: scale(1.03);
 }
 
-.program__img--wrapper{
-    margin-bottom: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
+.program__img--wrapper {
+  overflow: hidden;
+  display: flex;
 }
 
-.program__title{
-    font-size: 20px;
-    margin-bottom: 8px;
+.program__img {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.program__ratings{
-    color: #000;
+.program__title {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.program__title:hover {
+  text-decoration: underline;
+  cursor: no-drop;
+}
+
+.program__ratings {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.program__price {
+  display: flex;
+  justify-content: center;
+}
+
+.program__price--normal {
+  text-decoration: line-through;
+  padding-right: 8px;
+  color: #bfbfbf;
+}
+
+.program__price--discount {
+  color: #d2122e;
+}
+
+/* Programas */
+
+#programs {
+  padding-top: 50px;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Volver a más vendido */
+
+#bestseller__back-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__image--wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo--img {
+  width: 160px;
+  background-image: url(./assets/MikefitnesslogoTrasparente.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__logo--wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link,
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links--wrapper {
+  margin-bottom: 36px;
+}
+
+.footer__link {
+  padding: 0 8px;
 }
