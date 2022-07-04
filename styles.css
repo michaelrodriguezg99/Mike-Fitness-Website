@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.footer__link:hover {
   text-decoration: underline;
 }
 
@@ -85,6 +85,10 @@ button:active {
 
 section:nth-child(odd) {
   background-color: #f3f3f3;
+}
+
+.section__title {
+  padding-top: 30px;
 }
 
 /* Nav and header Section */
@@ -174,6 +178,11 @@ nav {
   padding: 50px 10px;
 }
 
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
 /* Header */
 
 header {
@@ -224,6 +233,7 @@ html {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* highlights */
@@ -259,10 +269,6 @@ To add the wave efect */
 .highlight__wrapper {
   display: flex;
   padding-bottom: 24px;
-}
-
-.section__title__highlights {
-  padding-top: 30px;
 }
 
 .highlight {
@@ -319,7 +325,7 @@ To add the wave efect */
 }
 
 .program__img {
-  height: 350px;
+  max-height: 350px;
   box-shadow: 0 5px 60px rgba(0, 0, 0, 0.75);
   transition: scale 300ms ease;
   cursor: no-drop;
@@ -388,7 +394,7 @@ To add the wave efect */
 /* Programas */
 
 #programs {
-  padding-top: 50px;
+  padding: 50px 24px;
 }
 
 .programs {
@@ -445,6 +451,37 @@ footer {
 .footer__link {
   padding: 0 8px;
 }
+
+/* SMALL PHONES LARGE TABLETS */
+
+@media (max-width: 768px) {
+    .header__description{
+        padding: 0 24px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .program{
+        width: 50%;
+    }
+    .programs{
+        padding: 0 24px;
+    }
+    .highlight {
+        width: 100%;
+    }
+    .highlight__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+/* SMALL PHONES LARGE TABLETS */
 
 @media (max-width: 550px) {
   .nav__links {
