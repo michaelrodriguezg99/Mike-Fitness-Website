@@ -130,6 +130,7 @@ nav {
   font-size: 40px;
   text-align: center;
   color: #d2122e;
+  display: none;
 }
 
 .menu__backdrop {
@@ -137,12 +138,20 @@ nav {
   background-color: #242424;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   z-index: 7;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
 }
 
 .button__menu--close {
@@ -153,19 +162,17 @@ nav {
   color: #fff;
 }
 
-.menu__links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menu__link{
-font-size: 40px;
-color: #fff;
-padding: 50px 10px;
+.menu__link {
+  font-size: 40px;
+  color: #fff;
+  padding: 50px 10px;
 }
-
-
 
 /* Header */
 
@@ -437,4 +444,14 @@ footer {
 
 .footer__link {
   padding: 0 8px;
+}
+
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+
+  .button__menu {
+    display: block;
+  }
 }

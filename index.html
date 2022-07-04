@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <title>Mike Fitness PR 🇵🇷</title>
   </head>
   <body>
@@ -24,6 +25,7 @@
               <a
                 class="nav__link"
                 href="http://kinobody.com/discount/mike.fitness_PR?redirect=%2Fproducts%2Flean-stack%3Fafmc%3Dmike.fitness_PR%26utm_campaign%3Dmike.fitness_PR%26utm_source%3Dleaddyno%26utm_medium%3Daffiliate"
+                target="_blank"
                 >Suplementos</a
               >
             </li>
@@ -33,28 +35,33 @@
               >
             </li>
           </ul>
-        </div>
-        <button class="button__menu">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="button__menu button__menu--close">
-            <i class="fas fa-times"></i>
+          <button class="button__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
           </button>
-          <ul>
+          <div class="menu__backdrop">
+            <button
+              class="button__menu button__menu--close"
+              onclick="closeMenu()"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
               <li class="menu__links">
-                  <a class="menu__link" href="#">Inicio</a>
-                  <a class="menu__link" href="#programs">Programas</a>
-                  <a
+                <a class="menu__link" href="#" onclick="closeMenu()">Inicio</a>
+                <a class="menu__link" href="#programs" onclick="closeMenu()">Programas</a>
+                <a
                   class="menu__link"
                   href="http://kinobody.com/discount/mike.fitness_PR?redirect=%2Fproducts%2Flean-stack%3Fafmc%3Dmike.fitness_PR%26utm_campaign%3Dmike.fitness_PR%26utm_source%3Dleaddyno%26utm_medium%3Daffiliate"
+                  target="_blank"
                   >Suplementos</a
-                  >
-                </li>
+                  onclick="closeMenu()"
+                >
+              </li>
             </ul>
+          </div>
         </div>
-        </nav>
-        <header>
+      </nav>
+      <header>
         <div class="header__container">
           <div class="header__description">
             <h1>Bienvenidos a Mike Fitness</h1>
@@ -211,7 +218,7 @@
                 <figure class="bestseller__img--wrapper">
                   <img
                     class="program__img"
-                    src="./assets/BodyWeight-MikeFitness.jpg"
+                    src="./assets/Weighted-MikeFitness (1).png"
                     alt=""
                   />
                 </figure>
