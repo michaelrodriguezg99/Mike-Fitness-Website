@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -46,8 +46,7 @@ img {
 }
 
 h1 {
-  font-size: 56px;
-  color: #d2122e;
+  font-size: 49px;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -66,8 +65,27 @@ p {
   color: #d2122e;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 button {
   cursor: pointer;
+}
+
+.header__container .button__header {
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header__container .button__header:hover {
+  background-color: white;
+  border: black 1px solid;
+  color: #d2122e;
 }
 
 button:active {
@@ -108,24 +126,29 @@ nav {
   padding: 0 24px;
 }
 .nav__link {
-  padding: 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #d2122e;
-  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  color: #222;
 }
 
 .nav__link:hover {
-  text-decoration: underline;
+  text-decoration: underline red;
 }
 
 .nav__link--primary {
-  border: 2px solid #d2122e;
+  color: white;
+  background-color: #222;
+  border: #222 1px solid;
   border-radius: 14px;
 }
 
 .nav__link--primary:hover {
   text-decoration: none;
+  background-color: white;
+  border: black 1px solid;
+  color: #d2122e;
 }
 
 .button__menu {
@@ -187,9 +210,7 @@ nav {
 
 header {
   padding-top: 15px;
-  height: calc(100vh - 80px);
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -199,24 +220,29 @@ header {
   background-color: #fff;
 }
 
-.header__description {
+.button__header--wrapper{
+  height: 200px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .header__container {
   width: 100%;
-  max-width: 720px;
-  height: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__image--wrapper {
-  padding: 20px 20px 0px 20px;
-  z-index: 2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -234,6 +260,33 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+/* Introduction */
+
+#introduction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction__header{
+  width: 100%;
+  padding-top: 30px;
+  max-width: 1100px;
+  text-align: center;
+  color: #222;
+}
+
+.introduction__para{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1100px;
+  font-size: 26px;
+  text-align: center;
+  color: #222;
 }
 
 /* highlights */
@@ -400,15 +453,6 @@ To add the wave efect */
 .programs {
   display: flex;
   justify-content: space-around;
-}
-
-/* Volver a más vendido */
-
-#bestseller__back-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
 }
 
 /* Footer */
