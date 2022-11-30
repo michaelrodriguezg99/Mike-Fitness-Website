@@ -455,6 +455,34 @@ To add the wave efect */
   justify-content: space-around;
 }
 
+.button__programs{
+  background-color: #222;
+  color: white;
+  border: black 1px solid;
+  margin-bottom: 10px;
+}
+
+.program__list{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.program__bullet{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.button__programs:hover{
+  background-color: white;
+  color: #d2122e;
+  border: black 1px solid;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
 /* Footer */
 
 footer {
